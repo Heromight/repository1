@@ -8,4 +8,16 @@ jQuery(document).ready(function($) {
 		$(this).html(dropOut);
 		$(this).parent().hide();
 	});
+	$(".counter .plus").click(function(){
+		console.log(parseInt($(this).next().text()));
+		var text = $(this).next().text();
+		text = parseInt(text) + 1 + " шт";
+		$(this).next().text(text);
+	});
+	$(".counter .minus").click(function(){
+		console.log(1);
+		var text = $(this).prev().text();
+		if (text > 0) text = parseInt(text) - 1 + " шт";
+		$(this).prev().text(text);
+	});
 });

@@ -459,6 +459,7 @@ nav li a {
     background: -ms-linear-gradient(top,  #ffa600 0%,#ffa000 31%,#ff8901 100%); /* IE10+ */
     background: linear-gradient(to bottom,  #ffa600 0%,#ffa000 31%,#ff8901 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa600', endColorstr='#ff8901',GradientType=0 ); /* IE6-9 */
+    cursor: pointer;
 }
 .counter > span {
     position: relative;
